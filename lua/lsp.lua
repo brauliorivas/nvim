@@ -76,6 +76,7 @@ vim.lsp.config('gopls', {
     },
   },
 })
+vim.lsp.config('denols', {})
 vim.lsp.enable({
   'gleam',
   'clangd',
@@ -87,4 +88,5 @@ vim.lsp.enable({
   'astro',
   'gopls',
   'nixd',
+  'denols',
 })
