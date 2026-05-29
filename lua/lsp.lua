@@ -58,13 +58,7 @@ vim.lsp.config('clojure_lsp', {})
 vim.lsp.config('html', {
   filetypes = { 'html', 'htmldjango', 'templ' },
 })
-vim.lsp.config('astro', {
-  init_options = {
-    typescript = {
-      tsdk = vim.fn.expand('~/.local/share/pnpm/global/5/node_modules/typescript/lib'),
-    },
-  },
-})
+vim.lsp.config('astro', {})
 vim.lsp.config('gopls', {
   settings = {
     gopls = {
@@ -77,6 +71,9 @@ vim.lsp.config('gopls', {
   },
 })
 vim.lsp.config('denols', {})
+vim.lsp.config('elixirls', {
+  cmd = { 'elixir-ls' },
+})
 vim.lsp.enable({
   'gleam',
   'clangd',
@@ -89,4 +86,5 @@ vim.lsp.enable({
   'gopls',
   'nixd',
   'denols',
+  'elixirls',
 })
