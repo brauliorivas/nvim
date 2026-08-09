@@ -32,6 +32,7 @@ return {
       'nix',
       'zsh',
       'bash',
+      'gleam',
     }
 
     require 'nvim-treesitter'.install(ts_languages)
