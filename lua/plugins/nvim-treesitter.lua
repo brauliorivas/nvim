@@ -33,6 +33,7 @@ return {
       'zsh',
       'bash',
       'gleam',
+      'rust',
     }
 
     require 'nvim-treesitter'.install(ts_languages)

@@ -74,6 +74,15 @@ vim.lsp.config('denols', {})
 vim.lsp.config('elixirls', {
   cmd = { 'elixir-ls' },
 })
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
+    }
+  }
+})
 vim.lsp.enable({
   'gleam',
   'clangd',
@@ -87,4 +96,5 @@ vim.lsp.enable({
   'nixd',
   'denols',
   'elixirls',
+  'rust_analyzer',
 })
