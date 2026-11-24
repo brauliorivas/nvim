@@ -17,6 +17,8 @@ map("n", "<Leader>P", '"+P', { noremap = true, silent = true }) -- Paste before 
 map("n", "<leader>dn", vim.diagnostic.goto_next)
 map("n", "<leader>dp", vim.diagnostic.goto_prev)
 
+map("i", "<C-c>", "<Esc>")
+
 -- Tabs
 -- Move to previous/next
 map('n', '<leader>ta', ':$tabnew<CR>', { noremap = true })
